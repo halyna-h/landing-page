@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+:root {
+    --background-color: rgb(221, 244, 242);
+    --button-color: #368ad9;
+    --button-h-color: #2a6cab;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+   #header-img {
+    width: 250px;
+  }
+  
+  #header {
+    position: fixed;
+    top: 0;
+    padding: 0px 20px;
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+    align-items: center;
+    background-color: var(--background-color);
+  }
+
+  nav > ul {
+    display: flex;
+    justify-content:space-between;
+    width: 25vw;
+  }
+
+  .button {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    text-transform: uppercase;
+    border: 1px black solid;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .get-started {
+    height: 200px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  h1 > span {
+    font-style: italic;
+  }
+  
+  .get-started input[type='email'] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+  }
+
+.get-started input[type='submit'] {
+    max-width: 150px;
+    width: 100%;
+    height: 40px;
+    margin: 15px 0;
+    border: 0;
+    background-color: var(--button-color);
+  }
+
+  input[type='submit']:hover {
+    background-color: var(--button-h-color);
+    transition: background-color 1s;
+  }
+
+  #features {
+    margin: 50px 100px;
+  }
+
+  .features__container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin: 15px 0;
+  }
+
+  .features__icon > img {
+    margin: 0 20px;
+    width: 100px;
+  }
+
+ #making {
+    display: flex;
+    justify-content: center;
+ }
+
+ #pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px 100px;
+ }
+
+ .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    margin: 10px;
+    border: 1px solid var(--button-h-color);
+    border-radius: 5px;
+ }
+
+ .product > img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 5px;
+ }
+
+ .product * {
+    margin: 10px;
+ }
+ .product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: var(--button-color);
+ }
+ 
+ .product > button:hover {
+    background-color: var(--button-h-color);
+    transition: background-color 1s;
+  }
+
+  @media (max-width: 800px) {
+    #pricing {
+      flex-direction: column;
+    }
+    .product {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+
+  footer {
+    margin-top: 25px;
+    padding: 25px;
+  }
+
+  footer > ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer > ul > li {
+    padding: 0 10px;
+  }
+
+  footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+  }

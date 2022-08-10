@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,121 @@
     <link rel="icon" href="img/cake-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header id="header">
-        
+        <div class="header-logo">
+            <img id="header-img" src="img/cake-logo.png" alt="shop logo">
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li>
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#making">Making Process</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <section class="get-started">
+            <h1>Treat yourself with <span>something sweet</span></h1>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                <input type="submit" name="submit" id="submit" class="button" value="Get Started">
+            </form>
+        </section>
+        <section id="features">
+            <div class="features__container">
+                <div class="features__icon">
+                    <img src="img/clients-icon.jpg" alt="client service">
+                </div>
+                <div class="features__text">
+                    <h2>Client Service</h2>
+                    <p>Based in Ilford, East London, our Cake Shop create and deliver beautiful cakes, cupcakes, wedding
+                        favours and treats across the capital, Essex and Home counties.
+                        Working from our professional kitchen in East London, we offer a professional and friendly – yet
+                        affordable – service to all our clients regardless of their budget and venue location.</p>
+                </div>
+            </div>
+            <div class="features__container">
+                <div class="features__icon">
+                    <img src="img/quality-icon.jpg" alt="quality">
+                </div>
+                <div class="features__text">
+                    <h2>Quality Assurance</h2>
+                    <p>We only use quality ingredients such as fair trade chocolate for our delicious chocolate ganache
+                        and fillings, free range eggs, grade A flour, real butter and wherever possible no artificial
+                        food colours, flavour enhancers, premixes and preservatives. None of our cakes are frozen –
+                        Ever! This is a personal promise. </p>
+                </div>
+            </div>
+            <div class="features__container">
+                <div class="features__icon">
+                    <img src="img/shipping-icon.png" alt="shipping">
+                </div>
+                <div class="features__text">
+                    <h2>Fast Shipping</h2>
+                    <p>We pride ourselves in being ethical and publish all our prices on the website. As there are
+                        literally hundreds of venues in and around London, it’s impossible to give one flat fee for
+                        delivery charges. Rest assured, we only charge a nominal fee to deliver your cakes.</p>
+                </div>
+            </div>
+        </section>
+        <section id="making">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/xVWwDc5aNDM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+        <section id="pricing">
+            <div class="product">
+                <img src="img/chocolate-cake.jpg" alt="chocolate cake">
+                <h2>Chocolate Cakes</h2>
+                <h3>£100</h3>
+                <ol>
+                    <li>Caramel Chocolate Cake</li>
+                    <li>Chocolate Truffle Cake</li>
+                    <li>Chocolate & Vanilla Cake</li>
+                </ol>
+                <button class="button">Select</button>
+            </div>
+            <div class="product">
+                <img src="img/fruit-cake.jpg" alt="fruit cake">
+                <h2>Fruit Based Cakes</h2>
+                <h3>£150</h3>
+                <ol>
+                    <li>Cherry & Almond Cake</li>
+                    <li>Pear and Blueberry Cake</li>
+                    <li>Apple cake</li>
+                </ol>
+                <button class="button">Select</button>
+            </div>
+            <div class="product">
+                <img src="img/roulade.jpg" alt="roulade">
+                <h2>Rolls & Roulades</h2>
+                <h3>£75</h3>
+                <ol>
+                    <li>Lemon Meringue Roulade</li>
+                    <li>Chocolate and Vanilla Swiss Roll</li>
+                    <li>Summer Berry Roulade</li>
+                </ol>
+                <button class="button">Select</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <span>Copyright 2022</span>
+    </footer>
 </body>
+
 </html>
